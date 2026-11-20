@@ -1,7 +1,27 @@
+:root{
+    --agenda-accent:#6425d0;
+    --agenda-ink:#0d1633;
+    --agenda-muted:#4c5268;
+}
 
+body{
+    color:var(--agenda-ink);
+    background-color: #fff;
+}
 .logo-image {
     display: block;
     width: 180px;
     max-width: 100%;
     height: auto;
+}
+
+.agenda-nav-link{
+    color:var(--agenda-ink);
+    font-weight: 600;
+}
+
+.agenda-nav-link:hover,
+.agenda-nav-link:focus-visible{
+    color:var(--agenda-accent);
+    text-decoration: underline;
 }

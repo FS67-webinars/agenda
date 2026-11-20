@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афиша мероприятий</title>
+    <link rel="stylesheet" href="./vendor/bootstrap.min.css">
      <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a class="logo-link" href="index.html">
-                <img src="./images/agenda-logo.png"
+    <header class="header py-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center 
+        justify-content-between gap-3"
+   
+            <a class="logo-link" href="#top">
+                <img class="logo-image" src="./images/agenda-logo.png"
                 alt="Логотип Афиши мероприятий" 
-                class="logo-image">
+                >
                 Афиша мероприятий</a>
         </div>
         <nav aria-label="Основная навигация">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Мероприятия</a></li>
-                <li class="nav-item"><a class="nav-link" href="events.html">О проекте</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+            <ul class="nav justify-contennt-center">
+                <li class="nav-item"><a class="nav-link agenda-nav-link" href="index.html">Мероприятия</a></li>
+                <li class="nav-item"><a class="nav-link agenda-nav-link" href="events.html">О проекте</a></li>
+                <li class="nav-item"><a class="nav-link agenda-nav-link" href="contact.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        Основной контент сайта
+    <main class="container py-4">
+        <h2>Future cards</h2>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-3 border bg-light">Jazz</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-3 border bg-light">Exhibition</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-3 border bg-light">Mitup</div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         Подвал сайта

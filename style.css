@@ -33,7 +33,59 @@ body {
 }
 
 .logo-link:focus-visible,
-.agenda-nav-link:focus-visible {
+.agenda-nav-link:focus-visible,
+.agenda-hero-link:focus-visible {
     outline: 2px solid var(--agenda-accent);
     outline-offset: 0.2rem;
+}
+
+.agenda-hero {
+    --agenda-hero-overlay: linear-gradient(180deg, #faf9ff, rgba(250, 249, 255, 0.93) 58%, rgba(250, 249, 255, 0.2));
+    padding: 3rem 0 7rem;
+    background-color: #faf9ff;
+    background-image: var(--agenda-hero-overlay), url("./images/hero-tel-aviv.png");
+    background-position: 68% center;
+    background-size: cover;
+}
+
+.agenda-hero-copy {
+    max-width: 34rem;
+}
+
+.agenda-hero h1 {
+    font-size: clamp(2.25rem, 1.6rem + 3.2vw, 4rem);
+    font-weight: 750;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+}
+
+.agenda-hero p {
+    max-width: 28rem;
+    color: var(--agenda-muted);
+    font-size: 1.125rem;
+}
+
+.agenda-hero-link {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--agenda-accent);
+    --bs-btn-border-color: var(--agenda-accent);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #501eaa;
+    --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-btn-hover-bg);
+    --bs-btn-active-border-color: var(--bs-btn-hover-bg);
+    --bs-btn-focus-shadow-rgb: 100, 37, 208;
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-padding-y: 0.7rem;
+    --bs-btn-font-weight: 600;
+    --bs-btn-border-radius: 0.6rem;
+}
+
+@media (min-width: 992px) {
+    .agenda-hero {
+        --agenda-hero-overlay: linear-gradient(90deg, #faf9ff 3%, rgba(250, 249, 255, 0.96) 30%, rgba(250, 249, 255, 0.84) 47%, rgba(250, 249, 255, 0) 78%);
+        padding-block: 5rem;
+        background-position: center;
+    }
 }

@@ -1,13 +1,18 @@
-:root{
-    --agenda-accent:#6425d0;
-    --agenda-ink:#0d1633;
-    --agenda-muted:#4c5268;
+:root {
+    --agenda-accent: #6425d0;
+    --agenda-ink: #0d1633;
+    --agenda-muted: #4c5268;
 }
 
-body{
-    color:var(--agenda-ink);
+body {
+    color: var(--agenda-ink);
     background-color: #fff;
 }
+
+.logo-link {
+    display: inline-block;
+}
+
 .logo-image {
     display: block;
     width: 180px;
@@ -15,13 +20,20 @@ body{
     height: auto;
 }
 
-.agenda-nav-link{
-    color:var(--agenda-ink);
+.agenda-nav-link {
+    --bs-nav-link-padding-x: 0.625rem;
+    color: var(--agenda-ink);
     font-weight: 600;
 }
 
 .agenda-nav-link:hover,
-.agenda-nav-link:focus-visible{
-    color:var(--agenda-accent);
+.agenda-nav-link:focus-visible {
+    color: var(--agenda-accent);
     text-decoration: underline;
+}
+
+.logo-link:focus-visible,
+.agenda-nav-link:focus-visible {
+    outline: 2px solid var(--agenda-accent);
+    outline-offset: 0.2rem;
 }

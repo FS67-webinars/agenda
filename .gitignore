@@ -1,0 +1,7 @@
+# Local previews and screenshots
+/.preview/
+/preview/
+/previews/
+/screenshots/
+/preview.*
+/preview-*.png

@@ -136,3 +136,17 @@ body {
 .agenda-card-details summary:hover {
     text-decoration: underline;
 }
+
+.agenda-footer {
+    background-color: #f5f0ff;
+    border-top: 1px solid #ded5f1;
+}
+
+.agenda-footer p {
+    color: var(--agenda-muted);
+}
+
+.agenda-footer-year {
+    border-top: 1px solid #ded5f1;
+    font-size: 0.875rem;
+}

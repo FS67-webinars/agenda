@@ -91,6 +91,14 @@ body {
     }
 }
 
+.agenda-events {
+    background-color: #f7f7fc;
+}
+
+.agenda-events-note {
+    color: var(--agenda-muted);
+}
+
 .agenda-card {
     --bs-card-color: var(--agenda-ink);
     --bs-card-border-color: #e4dff1;
